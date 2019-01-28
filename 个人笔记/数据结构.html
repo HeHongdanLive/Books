@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/><meta name="exporter-version" content="Evernote Mac 9.0.0 (457591)"/><meta name="created" content="2019-01-09 08:48:25 +0000"/><meta name="source" content="maxiang"/><meta name="source-application" content="maxiang"/><meta name="updated" content="2019-01-21 06:04:00 +0000"/><meta name="content-class" content="maxiang"/><title>数据结构</title></head><body lang="v2" style="color: #2c3f51; line-height: 1.6; background: none;"><del style="position:relative;display:block;z-index:10;"><a style="position: absolute;color: #FFF;text-decoration: none;font-size: 12px;height: 25px;border-radius: 0;margin-top: -20px;right: 15px;background: rgba(0, 0, 0, 0);border-left: 10px solid #BB3A34;border-right: 10px solid #BB3A34;border-bottom: 5px solid rgba(0, 0, 0, 0);width: 0;text-indent:-100000px;" href="http://maxiang.io/#/?provider=evernote&amp;guid=22a6e489-acad-490f-9f49-5b55e1fa569e&amp;notebook=%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E4%B8%AA%E7%AC%94%E8%AE%B0%E6%9C%AC">Edit</a></del><div style="color: #2c3f51; line-height: 1.6;">
+                        
+                    
+
+
+
+<h3 style="font-family: inherit; font-weight: bold; color: inherit; margin-top: 21px; margin-bottom: 10.5px; font-size: 27.2px; margin: 1.2em 0 .6em 0; text-align: start; line-height: 1.6;"> 数据结构</h3>
+
+<hr style="-moz-box-sizing: content-box; box-sizing: content-box; height: 0; margin-top: 21px; margin-bottom: 21px; border: 0; border-top: 1px solid rgba(102,128,153,0.1); margin: 2em 0; line-height: 1.6;"/>
+
+<ul style="margin-top: 0; margin-bottom: 1.1em; padding-left: 2em; line-height: 1.6;"><li style="line-height: 1.6;"><p style="margin: 0; line-height: 1.6;">数组</p>
+
+<ol style="margin-top: 0; padding-left: 2em; margin-bottom: .55em; line-height: 1.6;">
+<li style="line-height: 1.6;"><p style="margin: 0; line-height: 1.6;">优势 内存中整块内存，方便跨越读取，随机访问</p></li>
+<li style="line-height: 1.6;"><p style="margin: 0; line-height: 1.6;">添加数据时，如果没有足够的空间，可能还得将整个数组复制到其他地方</p></li></ol></li>
+<li style="line-height: 1.6;"><p style="margin: 0; line-height: 1.6;">链表</p>
+
+<ol style="margin-top: 0; padding-left: 2em; margin-bottom: .55em; line-height: 1.6;">
+<li style="line-height: 1.6;"><p style="margin: 0; line-height: 1.6;">链表的每个元素都存储了下一个元素的地址，从而使一系列随机的内存地址串在一起，由于一取二，二取三。</p></li>
+<li style="line-height: 1.6;"><p style="margin: 0; line-height: 1.6;">优势在插入，删除元素方面，元素可存储在内存的任何地方，根本就不需要移动元素</p></li>
+<li style="line-height: 1.6;"><p style="margin: 0; line-height: 1.6;">链表的每个元素都分为数据域和指针域，前者是实际存储的数据，后者则指向下一个元素的地址。和数组相比，每个元素需要占用的内存更大了。</p></li>
+<li style="line-height: 1.6;"><p style="margin: 0; line-height: 1.6;">链表对内存的要求很小，只要能够存储下一个数据元素的内存块都可以使用，因此不会造成碎片化。</p></li></ol></li>
+</ul>
+
+<p style="margin: 0 0 1.1em; line-height: 1.6;"><img src="%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84.resources/._1547025770519.png" height="388" width="1158"/></p>
+
+<ul style="margin-top: 0; margin-bottom: 1.1em; padding-left: 2em; line-height: 1.6;"><li style="line-height: 1.6;"><p style="margin: 0; line-height: 1.6;">调用栈 <br/>
+计算机在内部使用被称为调用栈的栈。我们来看看计算机是如何使用调用栈的。下面是一个 简单的函数。</p></li>
+</ul>
+
+
+
+<pre style="font-family: 'Source Code Pro',Consolas,monospace; white-space: pre-wrap; display: block; background-color: rgba(102,128,153,0.05); color: #333; word-wrap: break-word; font-size: .9em; background: #f6f6f6; line-height: 1.6; margin: 0 0 1.1em; padding: 0; border: 0; border-radius: 5px; text-align: start; word-break: break-all;"><code style="font-family: 'Source Code Pro',Consolas,monospace; font-size: inherit; background-color: transparent; white-space: pre-wrap; border-radius: 0; color: #f8f8f2; display: block; overflow-x: auto; background: #23241f; padding: 1.3em 2em;"><div style="min-height: 1.5em; color: inherit; line-height: 1.6; background-color: transparent;"><span style="display: inline; line-height: 1.6; color: #f92672; background-color: transparent;"><span style="display: inline; line-height: 1.6; color: #66d9ef; background-color: transparent;">def</span> <span style="display: inline; line-height: 1.6; color: #a6e22e; background-color: transparent;">greet</span><span style="display: inline; line-height: 1.6; color: #f8f8f2; background-color: transparent;">(name)</span>:</span>
+</div><div style="min-height: 1.5em; color: inherit; line-height: 1.6; background-color: transparent;"><span style="display: inline; line-height: 1.6; color: #f92672; background-color: transparent;">print</span> <span style="display: inline; line-height: 1.6; color: #e6db74; background-color: transparent;">"hello, "</span> + name + <span style="display: inline; line-height: 1.6; color: #e6db74; background-color: transparent;">"!"</span> greet2(name)
+</div><div style="min-height: 1.5em; color: inherit; line-height: 1.6; background-color: transparent;"><span style="display: inline; line-height: 1.6; color: #f92672; background-color: transparent;">print</span> <span style="display: inline; line-height: 1.6; color: #e6db74; background-color: transparent;">"getting ready to say bye..."</span> bye()
+</div></code></pre>
+
+<p style="margin: 0 0 1.1em; line-height: 1.6;">这个函数问候用户，再调用另外两个函数。这两个函数的代码如下。</p>
+
+
+
+<pre style="font-family: 'Source Code Pro',Consolas,monospace; white-space: pre-wrap; display: block; background-color: rgba(102,128,153,0.05); color: #333; word-wrap: break-word; font-size: .9em; background: #f6f6f6; line-height: 1.6; margin: 0 0 1.1em; padding: 0; border: 0; border-radius: 5px; text-align: start; word-break: break-all;"><code style="font-family: 'Source Code Pro',Consolas,monospace; font-size: inherit; background-color: transparent; white-space: pre-wrap; border-radius: 0; color: #f8f8f2; display: block; overflow-x: auto; background: #23241f; padding: 1.3em 2em;"><div style="min-height: 1.5em; color: inherit; line-height: 1.6; background-color: transparent;"><span style="display: inline; line-height: 1.6; color: #f92672; background-color: transparent;"><span style="display: inline; line-height: 1.6; color: #66d9ef; background-color: transparent;">def</span> <span style="display: inline; line-height: 1.6; color: #a6e22e; background-color: transparent;">greet2</span><span style="display: inline; line-height: 1.6; color: #f8f8f2; background-color: transparent;">(name)</span>:</span>
+</div><div style="min-height: 1.5em; color: inherit; line-height: 1.6; background-color: transparent;"><span style="display: inline; line-height: 1.6; color: #f92672; background-color: transparent;">print</span> <span style="display: inline; line-height: 1.6; color: #e6db74; background-color: transparent;">"how are you, "</span> + name + <span style="display: inline; line-height: 1.6; color: #e6db74; background-color: transparent;">"?"</span>
+</div><div style="min-height: 1.5em; color: inherit; line-height: 1.6; background-color: transparent;"><span style="display: inline; line-height: 1.6; color: #f92672; background-color: transparent;"><span style="display: inline; line-height: 1.6; color: #66d9ef; background-color: transparent;">def</span> <span style="display: inline; line-height: 1.6; color: #a6e22e; background-color: transparent;">bye</span><span style="display: inline; line-height: 1.6; color: #f8f8f2; background-color: transparent;">()</span>:</span>
+</div><div style="min-height: 1.5em; color: inherit; line-height: 1.6; background-color: transparent;"><span style="display: inline; line-height: 1.6; color: #f92672; background-color: transparent;">print</span> <span style="display: inline; line-height: 1.6; color: #e6db74; background-color: transparent;">"ok bye!"</span>
+</div></code></pre>
+
+<p style="margin: 0 0 1.1em; line-height: 1.6;">下面详细介绍调用函数时发生的情况。</p>
+
+
+
+<p style="margin: 0 0 1.1em; line-height: 1.6;"><img src="%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84.resources/._1547027558501.png" height="340" width="585"/></p>
+
+
+
+<p style="margin: 0 0 1.1em; line-height: 1.6;"><img src="%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84.resources/._1547027593848.png" height="715" width="554"/></p>
+
+
+
+<p style="margin: 0 0 1.1em; line-height: 1.6;"><img src="%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84.resources/._1547027788018.png" height="288" width="1122"/></p>
+
+<ul style="margin-top: 0; margin-bottom: 1.1em; padding-left: 2em; line-height: 1.6;"><li style="line-height: 1.6;"><p style="margin: 0; line-height: 1.6;">离散表</p></li>
+</ul>
+
+
+
+<p style="margin: 0 0 1.1em; line-height: 1.6;"><img src="%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84.resources/._1547035185574.png" height="466" width="1736"/></p>
+
+
+
+<p style="margin: 0 0 1.1em; line-height: 1.6;"><img src="%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84.resources/._1547192205384.png" height="164" width="1726"/></p>
+
+
+
+<p style="margin: 0 0 1.1em; line-height: 1.6;"><img src="%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84.resources/._1547192213876.png" height="142" width="1758"/></p>
+
+
+
+<p style="margin: 0 0 1.1em; line-height: 1.6;"><img src="%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84.resources/._1547192836881.png" height="608" width="1196"/></p>
+
+
+
+<p style="margin: 0 0 1.1em; line-height: 1.6;"><img src="%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84.resources/._1547193166379.png" height="472" width="2326"/></p>
+
+
+
+<p style="margin: 0 0 1.1em; line-height: 1.6;"><img src="%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84.resources/._1547193659799.png" height="462" width="1240"/></p></div><center style="display:none !important;visibility:collapse !important;height:0 !important;white-space:nowrap;width:100%;overflow:hidden">%3Ch3%20font%20color%3D%22%23000999%22%3E%20%u6570%u636E%u7ED3%u6784%3C/h3%3E%0A----------------------%0A-%20%u6570%u7EC4%0A%091.%20%u4F18%u52BF%20%u5185%u5B58%u4E2D%u6574%u5757%u5185%u5B58%uFF0C%u65B9%u4FBF%u8DE8%u8D8A%u8BFB%u53D6%uFF0C%u968F%u673A%u8BBF%u95EE%0A%092.%20%u6DFB%u52A0%u6570%u636E%u65F6%uFF0C%u5982%u679C%u6CA1%u6709%u8DB3%u591F%u7684%u7A7A%u95F4%uFF0C%u53EF%u80FD%u8FD8%u5F97%u5C06%u6574%u4E2A%u6570%u7EC4%u590D%u5236%u5230%u5176%u4ED6%u5730%u65B9%0A-%20%u94FE%u8868%0A%091.%20%u94FE%u8868%u7684%u6BCF%u4E2A%u5143%u7D20%u90FD%u5B58%u50A8%u4E86%u4E0B%u4E00%u4E2A%u5143%u7D20%u7684%u5730%u5740%uFF0C%u4ECE%u800C%u4F7F%u4E00%u7CFB%u5217%u968F%u673A%u7684%u5185%u5B58%u5730%u5740%u4E32%u5728%u4E00%u8D77%uFF0C%u7531%u4E8E%u4E00%u53D6%u4E8C%uFF0C%u4E8C%u53D6%u4E09%u3002%0A%092.%20%20%u4F18%u52BF%u5728%u63D2%u5165%uFF0C%u5220%u9664%u5143%u7D20%u65B9%u9762%uFF0C%u5143%u7D20%u53EF%u5B58%u50A8%u5728%u5185%u5B58%u7684%u4EFB%u4F55%u5730%u65B9%uFF0C%u6839%u672C%u5C31%u4E0D%u9700%u8981%u79FB%u52A8%u5143%u7D20%0A%093.%20%20%u94FE%u8868%u7684%u6BCF%u4E2A%u5143%u7D20%u90FD%u5206%u4E3A%u6570%u636E%u57DF%u548C%u6307%u9488%u57DF%uFF0C%u524D%u8005%u662F%u5B9E%u9645%u5B58%u50A8%u7684%u6570%u636E%uFF0C%u540E%u8005%u5219%u6307%u5411%u4E0B%u4E00%u4E2A%u5143%u7D20%u7684%u5730%u5740%u3002%u548C%u6570%u7EC4%u76F8%u6BD4%uFF0C%u6BCF%u4E2A%u5143%u7D20%u9700%u8981%u5360%u7528%u7684%u5185%u5B58%u66F4%u5927%u4E86%u3002%0A%094.%20%20%u94FE%u8868%u5BF9%u5185%u5B58%u7684%u8981%u6C42%u5F88%u5C0F%uFF0C%u53EA%u8981%u80FD%u591F%u5B58%u50A8%u4E0B%u4E00%u4E2A%u6570%u636E%u5143%u7D20%u7684%u5185%u5B58%u5757%u90FD%u53EF%u4EE5%u4F7F%u7528%uFF0C%u56E0%u6B64%u4E0D%u4F1A%u9020%u6210%u788E%u7247%u5316%u3002%0A%0A%21%5BAlt%20text%5D%28./1547025770519.png%29%0A-%20%u8C03%u7528%u6808%0A%09%u8BA1%u7B97%u673A%u5728%u5185%u90E8%u4F7F%u7528%u88AB%u79F0%u4E3A%u8C03%u7528%u6808%u7684%u6808%u3002%u6211%u4EEC%u6765%u770B%u770B%u8BA1%u7B97%u673A%u662F%u5982%u4F55%u4F7F%u7528%u8C03%u7528%u6808%u7684%u3002%u4E0B%u9762%u662F%u4E00%u4E2A%20%u7B80%u5355%u7684%u51FD%u6570%u3002%0A%60%60%60%0Adef%20greet%28name%29%3A%0Aprint%20%22hello%2C%20%22%20+%20name%20+%20%22%21%22%20greet2%28name%29%0Aprint%20%22getting%20ready%20to%20say%20bye...%22%20bye%28%29%0A%60%60%60%0A%0A%20%20%u8FD9%u4E2A%u51FD%u6570%u95EE%u5019%u7528%u6237%uFF0C%u518D%u8C03%u7528%u53E6%u5916%u4E24%u4E2A%u51FD%u6570%u3002%u8FD9%u4E24%u4E2A%u51FD%u6570%u7684%u4EE3%u7801%u5982%u4E0B%u3002%0A%0A%60%60%60%0Adef%20greet2%28name%29%3A%0Aprint%20%22how%20are%20you%2C%20%22%20+%20name%20+%20%22%3F%22%0Adef%20bye%28%29%3A%0Aprint%20%22ok%20bye%21%22%0A%60%60%60%0A%0A%20%20%u4E0B%u9762%u8BE6%u7EC6%u4ECB%u7ECD%u8C03%u7528%u51FD%u6570%u65F6%u53D1%u751F%u7684%u60C5%u51B5%u3002%0A%0A%21%5BAlt%20text%5D%28./1547027558501.png%29%0A%21%5BAlt%20text%5D%28./1547027593848.png%29%0A%21%5BAlt%20text%5D%28./1547027788018.png%29%0A%0A-%20%u79BB%u6563%u8868%0A%21%5BAlt%20text%5D%28./1547035185574.png%29%0A%21%5BAlt%20text%5D%28./1547192205384.png%29%0A%21%5BAlt%20text%5D%28./1547192213876.png%29%0A%21%5BAlt%20text%5D%28./1547192836881.png%29%0A%21%5BAlt%20text%5D%28./1547193166379.png%29%0A%21%5BAlt%20text%5D%28./1547193659799.png%29%0A</center><br/></body></html>
