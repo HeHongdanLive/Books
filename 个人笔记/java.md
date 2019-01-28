@@ -9,6 +9,13 @@
     char*	    |               4	         |             8
     float	          |         4	         |             4
     double	        |           8	          |            8
+    
+|Follow Me|
+|---|
+|[知 乎][zhihu]
+|[微 博][weibo]
+|[简书][jianshu]
+|[CSDN][csdn]
 2. == 和 equals有什么区别
 	1. ==是判断两个变量或实例是不是指向同一个内存空间 
 equals是判断两个变量或实例所指向的内存空间的值是不是相同 
