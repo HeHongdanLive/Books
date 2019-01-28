@@ -1,21 +1,17 @@
 # 一些奇奇怪怪的java笔记
-1. java基本数据类型有哪些，int， long占几个字节      
-   |C类型	   |    32	    |              64      |
-    |char	          |             1	            |          1
-    short int	      |            2	       |               2
-    int	   |                4	          |            4
-    long int	           |        4	   |                   8
-    long long int	      |             8	      |                8
-    char*	    |               4	         |             8
-    float	          |         4	         |             4
-    double	        |           8	          |            8
-    
-|Follow Me|
-|---|
-|[知 乎][zhihu]
-|[微 博][weibo]
-|[简书][jianshu]
-|[CSDN][csdn]
+1. java基本数据类型有哪些，int， long占几个字节   
+
+|C类型|32|64|
+|---|---|---|
+|char|1|1|
+|short int|2|2|
+|int|4|4|
+|long int|4|8|
+|long long int|8|8|
+|char*|4|8|
+|float|4|4|
+|double|8|8|
+
 2. == 和 equals有什么区别
 	1. ==是判断两个变量或实例是不是指向同一个内存空间 
 equals是判断两个变量或实例所指向的内存空间的值是不是相同 
